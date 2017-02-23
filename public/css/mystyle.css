@@ -1,0 +1,8 @@
+.navbar-top-links {
+	height: 70px;
+	padding-top: 20px; 
+	margin-right: 60px;
+}
+.pull-right .btn {
+	border-radius: 10px;
+}
