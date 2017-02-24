@@ -6,3 +6,7 @@
 .pull-right .btn {
 	border-radius: 10px;
 }
+
+.panel {
+	border:none !important;
+}
