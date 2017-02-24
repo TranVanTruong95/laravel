@@ -14,3 +14,7 @@
 .thumbnails li{
 	margin-left: 0 !important;
 }
+
+.thumbnail img{
+	margin:0 !important;
+}
