@@ -63,10 +63,10 @@
                     <input type="hidden" name="_token" value="{!! csrf_token() !!}">
                     <div class="form-group" style="margin-left: 10px;">
                         <label for="paypal">
-                            <input type="radio" id="paypal" name="thanh-toan" value="paypal" class="form-control payment" style="margin:0 4px !important;">Payment with paypal
+                            <input type="radio" id="paypal" name="thanh-toan" value="paypal" class="payment" style="margin:0 4px !important;">Payment with paypal
                         </label>
                         <label for="balance">
-                            <input type="radio" id="balance" name="thanh-toan" value="balance" class="form-control payment" style="margin:0 4px !important;">Payment with balance</label>
+                            <input type="radio" id="balance" name="thanh-toan" value="balance" class="payment" style="margin:0 4px !important;">Payment with balance</label>
                     </div>
                 </form>
             </div>
