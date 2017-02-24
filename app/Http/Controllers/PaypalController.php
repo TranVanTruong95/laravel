@@ -89,32 +89,55 @@ class PaypalController extends Controller
     }
 
     public function getPaymentStatus(){
+
+        // echo '<pre>';
+        // print_r(Session::all());
+        // echo '</pre>';
+        // die();
+
     	/** Get the payment ID before session clear **/
         $payment_id = Session::get('paypal_payment_id');
-        /** clear the session payment ID **/
+
+
+        // /** clear the session payment ID **/
+
         Session::forget('paypal_payment_id');
         if (empty(Input::get('PayerID')) || empty(Input::get('token'))) {
             \Session::put('error','Payment failed');
             return Redirect::route('addmoney.paywithpaypal');
         }
+
         $payment = Payment::get($payment_id, $this->api_context);
+
         /** PaymentExecution object includes information necessary **/
         /** to execute a PayPal account payment. **/
         /** The payer_id is added to the request query parameters **/
         /** when the user is redirected from paypal back to your site **/
+
         $execution = new PaymentExecution();
         $execution->setPayerId(Input::get('PayerID'));
+
         /**Execute the payment **/
+
         $result = $payment->execute($execution, $this->api_context);
+        
+        // echo '<pre>';
+        // print_r($result);
+        // echo '</pre>';
+        // die();
         /** dd($result);exit; /** DEBUG RESULT, remove it later **/
         if ($result->getState() == 'approved') { 
             
             /** it's all right **/
             /** Here Write your database logic like that insert record or value in database if you want **/
             \Session::put('success','Payment success');
-            return Redirect::route('addmoney.paywithpaypal');
+            return Redirect::route('getPaymentSuccess');
         }
         \Session::put('error','Payment failed');
         return Redirect::route('addmoney.paywithpaypal');
+    }
+
+    public function getPaymentSuccess(){
+        return view('frontend.page.success');
     }
 }

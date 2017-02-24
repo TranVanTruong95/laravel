@@ -94,4 +94,7 @@ Route::group(['middleware'=>'frontend'],function(){
 	Route::post('addmoney/paypal',['as'=>'addmoney.paypal','uses'=>'PaypalController@postPaymentWithPaypal']);
 
 	Route::get('addmoney/paypal',['as'=>'payment.status','uses'=>'PaypalController@getPaymentStatus']);
+
+	Route::get('addmoney/paymentsuccess',['as'=>'getPaymentSuccess','uses'=>'PaypalController@getPaymentSuccess']);
+	
 });
