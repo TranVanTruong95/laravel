@@ -15,7 +15,7 @@
     </div>
     <?php Session::forget('error');?>
     @endif
-    <div class="panel-body" style="background-color: #eee">
+    <div class="panel-body">
         <form class="form-horizontal" method="POST" id="payment-form" role="form" action="{!! URL::route('addmoney.paypal') !!}" >
             {{ csrf_field() }}
             <input type="hidden" name="amount" id="amount" value="{!! isset($total)?$total:10; !!}">            
