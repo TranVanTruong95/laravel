@@ -65,6 +65,8 @@
                         <label for="paypal">
                             <input type="radio" id="paypal" name="thanh-toan" value="paypal" class="payment" style="margin:0 4px !important;">Payment with paypal
                         </label>
+                    </div>
+                    <div class="form-group" style="margin-left: 10px;">
                         <label for="balance">
                             <input type="radio" id="balance" name="thanh-toan" value="balance" class="payment" style="margin:0 4px !important;">Payment with balance</label>
                     </div>
