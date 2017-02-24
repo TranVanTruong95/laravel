@@ -10,3 +10,11 @@
 .panel {
 	border:none !important;
 }
+
+.thumbnails li{
+	margin-left: 0 !important;
+}
+
+.thumbnail img{
+	max-height: 320px !important;
+}

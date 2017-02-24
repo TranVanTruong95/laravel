@@ -13,7 +13,7 @@
       <h1 class="heading1"><span class="maintext">Featured Products</span><span class="subtext"> See Our Most featured Products</span></h1>
       <ul class="thumbnails">
         @foreach($product as $item)
-        <li class="span3">
+        <li class="col-sm-3">
           <a class="prdocutname" href="product.html">{!! $item['name'] !!}</a>
           <div class="thumbnail">
             <span class="sale tooltip-test">Sale</span>
@@ -37,7 +37,7 @@
       <h1 class="heading1"><span class="maintext">Latest Products</span><span class="subtext"> See Our  Latest Products</span></h1>
       <ul class="thumbnails">
         @foreach($product_relative as $item)
-        <li class="span3">
+        <li class="col-sm-3">
           <a class="prdocutname" href="product.html">{!! $item['name'] !!}</a>
           <div class="thumbnail">
             <a href="{!! url('san-pham',$item['id']) !!}"><img alt="" src="{!! asset('resources/upload/'.$item['image']) !!}"></a>
