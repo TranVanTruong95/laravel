@@ -32,7 +32,7 @@ class HomeController extends Controller
     }
 
     public function loaisanpham($id){
-        $product = Product::where('cate_id',$id)->paginate(2);
+        $product = Product::where('cate_id',$id)->paginate(3);
         $category = DB::table('cates')->where('id',$id)->first();
         $cate_parent = DB::table('cates')->where('id',$id)->first();
         $cate = Cate::select('id','name','alias','parent_id')->where('parent_id',$cate_parent->parent_id)->get();

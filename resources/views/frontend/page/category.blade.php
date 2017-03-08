@@ -6,7 +6,7 @@
      <!--  breadcrumb -->  
       <ul class="breadcrumb">
         <li>
-          <a href="#">Home</a>
+          <a href="{!! route('home') !!}">Home</a>
           <span class="divider">/</span>
         </li>
         <li class="active">Category</li>
@@ -34,7 +34,7 @@
                   <img width="40" height="40" src="{!! asset('resources/upload/'.$recent->image) !!}" alt="product" title="product">
                   <a class="productname" href="product.html">{!! $recent->name !!}</a>
                   <span class="procategory">{!! $category->name !!}</span>
-                  <span class="price">$250</span>
+                  <span class="price">${!! $recent->price !!}</span>
                </li>
             @endforeach
             </ul>
