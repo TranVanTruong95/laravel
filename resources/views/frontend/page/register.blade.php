@@ -44,11 +44,37 @@
                   <input type="password" class="form-control" id="repassword" name="repassword">
                 </div>
               </div>
+              
+              <h3 class="heading3">Shopping Information</h3>
               <div class="form-group">
-                <label class="checkbox inline">
-                  <input type="checkbox" value="option2" >
-                  I have read and agree to the <a href="#" >Privacy Policy</a>
-                </label>
+                  <label class="control-label" style="float: left;">Sex</label>
+                  <ul style="float: left;">
+                      <li>
+                          <label class="control-label">
+                              <input type="radio" name="sex">Male
+                          </label>
+                      </li>
+                      <li>
+                      <label class="control-label">
+                          <input type="radio" name="sex">Female
+                      </label>
+                      </li>
+                  </ul>
+                  <div class="clearfix"></div>
+              </div>
+              <div class="form-group">
+                  <label class="control-label">Phone</label>
+                  <div class="controls">
+                      <input type="text" name="phone" class="form-control" placeholder="Enter phone">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="control-label">Address</label>
+                  <div class="controls">
+                      <input type="text" name="address" class="form-control" placeholder="Enter address">
+                  </div>
+              </div>
+              <div class="form-group">
                 <input type="submit" class="btn btn-orange" value="Continue">
               </div>
           </div>

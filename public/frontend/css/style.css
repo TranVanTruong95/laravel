@@ -78,18 +78,18 @@ color: #; vertical-align: top; padding: 5px 10px; border-bottom: 1px dashed #E7E
 .headerdetails li.carticon.dropdown { background:url(../img/sprite.png) no-repeat 10px -328px; padding:7px 10px 7px 45px }
 .buttonwrap { padding:10px; margin:5px 10px 10px 0 }
 /* ------------ Category Menu ------------ */
-#categorymenu {height: 40px; padding:7px 0 7px 0; background:#fdeece }
+#categorymenu {height: 40px;padding: 10px 0; background:#fdeece }
 #categorymenu:after { clear:both; content:"" }
 #categorymenu select { display:none }
 ul.categorymenu { margin:0px 6px 0px 6px }
-ul.categorymenu > li { position:relative; margin: 0; border-right:1px solid #eec28f }
+ul.categorymenu > li { position:relative; padding: 0 10px; border-right:1px solid #eec28f }
 ul.categorymenu > li:last-child { border:none }
-ul.categorymenu > li > a { text-decoration: none; display: block; z-index: 6; position: relative; color:#4b5b58!Important; text-transform:uppercase; font-size:14px }
+ul.categorymenu > li > a { text-decoration: none; display: block; z-index: 6; position: relative; color:#4b5b58!Important; text-transform:uppercase; font-size:14px;font-weight: bold; }
 ul.categorymenu > li:hover > a, ul.categorymenu > li > a.active { color:#fff!important; text-shadow:none; background-color:#f25c27 }
 ul.categorymenu > li > div { display: none; padding:15px; position: absolute; top: 97%; left: 7px; z-index: 99999; display: none; float: left; min-width: 120px; margin: 1px 0 0; list-style: none; background-color: #ffffff; border:1px solid #DDDDDD; border-bottom: 4px solid #F25C27; box-shadow : 0 5px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow : 0 5px 10px rgba(0, 0, 0, 0.2);  -webkit-box-shadow : 0 5px 10px rgba(0, 0, 0, 0.2) }
 .dropdown-menu {  padding:15px; position: absolute; top: 97%; left: 7px; z-index: 99999; display: none; float: left; min-width: 120px; margin: 1px 0 0; list-style: none; background-color: #ffffff; border:1px solid #DDDDDD; border-bottom: 4px solid #F25C27; border-radius:0; -moz-border-radius:0; -webkit-border-radius:0  }
 ul.categorymenu > li:hover > div { display: table; width:100%; vertical-align:top }
-ul.categorymenu > li > div > ul { display: table-cell; vertical-align:top; fl }
+ul.categorymenu > li > div > ul {padding: 5px !important; display: table-cell; vertical-align:top; }
 ul.categorymenu > li ul + ul { padding-left: 20px; }
 ul.categorymenu > li ul > li { display:block; float:left; width:100%; border-bottom:1px dashed #dddddd }
 ul.categorymenu > li > div > ul.arrow li a { padding:8px 8px 8px 8px; display:block }
@@ -139,7 +139,7 @@ ul.categorymenu > li ul > li img { margin:3px; max-width:none }
 .thumbnail .offer { position:absolute; top:10px; left:-2px; background:url(../img/offer.png) no-repeat 0 0; height:45px; width:68px; float:left; overflow:hidden; display:block; text-indent:9999px }
 .thumbnail .sale { position:absolute; top:10px; left:-2px; background:url(../img/sale.png) no-repeat 0 0; height:45px; width:68px; float:left; overflow:hidden; display:block; text-indent:9999px }
 .thumbnail .new { position:absolute; top:10px; left:-2px; background:url(../img/new.png) no-repeat 0 0; height:45px; width:68px; float:left; overflow:hidden; display:block; text-indent:9999px }
-.thumbnail .pricetag { width:221px; height:37px; background:url(../img/pricetag.png) no-repeat right 0; margin-top:8px; position:relative; padding:9px 9px 9px 40px; margin-bottom:20px }
+.thumbnail .pricetag { width:100%; height:50px; background:url(../img/pricetag.png) no-repeat right 0; margin-top:8px; position:relative; padding:9px 9px 9px 40px; margin-bottom:20px }
 .thumbnail .pricetag .spiral { position:absolute; top:-19px; left:10px; background:url(../img/spiral.png) no-repeat right 0; height:50px; width:35px }
 .thumbnail a.productcart { background: #f25c27 url(../img/prodcutcart.png) right 7px no-repeat; color:#fff; float:right; padding:8px 27px 8px 8px; font-size:13px; }
 .thumbnail a.productcart:hover { background: #db420e url(../img/prodcutcart.png) right 7px no-repeat; }
@@ -148,12 +148,12 @@ ul.categorymenu > li ul > li img { margin:3px; max-width:none }
 .thumbnail .shortlinks a.details { background-position:0 -384px }
 .thumbnail .shortlinks a.wishlist { background-position:0 -423px }
 .thumbnail .shortlinks a.compare { background-position:0 -462px }
-.thumbnail .price { float:right; margin-right:19px; text-align:right }
+.thumbnail .price { float:right; margin:6px 13px; text-align:right }
 .thumbnail .price .pricenew { font-size:16px; color:#5e626b; font-weight:bold }
 .thumbnail .price .priceold { font-size:13px; color:#5e626b; text-decoration:line-through; color:#96979d; }
 
 
-#featured .thumbnails li:hover .thumbnail img, #latest .thumbnails li:hover .thumbnail img, #related .thumbnails li:hover .thumbnail img, #category .thumbnails li:hover .thumbnail img, .thumbnails.list li:hover .thumbnail img { transform: scale(1.2, 1.2); -ms-transform: scale(1.2, 1.2); /* IE 9 */ -webkit-transform: scale(1.2, 1.2); /* Safari and Chrome */ -o-transform: scale(1.2, 1.2); /* Opera */ -moz-transform: scale(1.2, 1.2); /* Firefox */ transition: all 0.8s; -ms-transition: all 0.8s; /* IE 9 */ -moz-transition: all 0.8s; /* Firefox 4 */ -webkit-transition: all 0.8s; /* Safari and Chrome */ -o-transition: all 0.8s; /* Opera */ }
+#featured .thumbnails li:hover .thumbnail img, #latest .thumbnails li:hover .thumbnail img, #related .thumbnails li:hover .thumbnail img, #category .thumbnails li:hover .thumbnail img, .thumbnails.list li:hover .thumbnail img { transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); /* IE 9 */ -webkit-transform: scale(1.1, 1.1); /* Safari and Chrome */ -o-transform: scale(1.1, 1.1); /* Opera */ -moz-transform: scale(1.1, 1.1); /* Firefox */ transition: all 0.8s; -ms-transition: all 0.8s; /* IE 9 */ -moz-transition: all 0.8s; /* Firefox 4 */ -webkit-transition: all 0.8s; /* Safari and Chrome */ -o-transition: all 0.8s; /* Opera */ }
 
 #featured .thumbnails li .thumbnail, #latest .thumbnails li .thumbnail, #related .thumbnails li .thumbnail, #category .thumbnails li .thumbnail, .thumbnails.list li .thumbnail  { overflow:hidden}
 

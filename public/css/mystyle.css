@@ -25,3 +25,10 @@
 .flex-control-nav li a{
 	border-radius: 50%;
 }
+.thumbnail-img {
+	overflow: hidden;
+	max-height: 378px;
+}
+.required {
+	color: red;
+}

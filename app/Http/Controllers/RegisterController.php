@@ -19,6 +19,9 @@ class RegisterController extends Controller
     	$user->email = $request->email;
     	$user->level = 2;
     	$user->password = Hash::make($request->password);
+        $user->phone = $request->phone;
+        $user->address = $request->address;
+        $user->sex = $request->sex;
     	$user->save();
     	return redirect()->route('getLogin')->with(['level'=>'success','flash_message'=>'Success! Your account is register']);
     }
