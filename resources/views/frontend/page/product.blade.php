@@ -5,7 +5,7 @@
     <!-- Product Details-->
     <div class="row">
      <!-- Left Image-->
-      <div class="span5">
+      <div class="col-sm-5">
         <ul class="thumbnails mainimage">
           <li class="span5">
             <a  rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom" href="{!! asset('resources/upload/'.$product_detail['image']) !!}">
@@ -24,7 +24,7 @@
         </ul>
       </div>
        <!-- Right Details-->
-      <div class="span7">
+      <div class="col-sm-7">
         <div class="row">
           <div class="span7">
             <h1 class="productname"><span class="bgnone">{!! $product_detail['name'] !!}</span></h1>

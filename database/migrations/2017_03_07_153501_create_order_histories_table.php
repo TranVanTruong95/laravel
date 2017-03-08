@@ -14,7 +14,12 @@ class CreateOrderHistoriesTable extends Migration
     public function up()
     {
         Schema::create('order_histories', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('order_history_id');
+            $table->integer('order_id');
+            $table->integer('order_status_id');
+            $table->string('notify');
+            $table->string('comment');
+            $table->date('date_added');
             $table->timestamps();
         });
     }

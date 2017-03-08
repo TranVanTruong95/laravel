@@ -13,7 +13,7 @@
       </ul>
       <div class="row">        
         <!-- Sidebar Start-->
-        <aside class="span3">
+        <aside class="col-sm-3">
          <!-- Category-->  
           <div class="sidewidt">
             <h2 class="heading2"><span>Categories</span></h2>
@@ -70,16 +70,15 @@
         </aside>
         <!-- Sidebar End-->
         <!-- Category-->
-        <div class="span9">          
+        <div class="col-sm-9">          
           <!-- Category Products-->
           <section id="category">
             <div class="row">
-              <div class="span9">
                <!-- Category-->
                 <section id="categorygrid">
                   <ul class="thumbnails grid">
                      @foreach($product as $item)
-                     <li class="span3">
+                     <li class="col-sm-4">
                       <a class="prdocutname" href="product.html">{!! $item->name !!}</a>
                       <div class="thumbnail">
                         <span class="sale tooltip-test">Sale</span>
@@ -108,7 +107,6 @@
                     </ul>
                   </div>
                 </section>
-              </div>
             </div>
           </section>
         </div>

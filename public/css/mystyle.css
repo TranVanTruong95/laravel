@@ -21,3 +21,7 @@
 .flex-control-nav {
 	text-align: center;
 }
+
+.flex-control-nav li a{
+	border-radius: 50%;
+}

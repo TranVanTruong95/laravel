@@ -69,23 +69,6 @@ Route::group(['prefix'=>'admin','middleware'=>'login'],function(){
 
 
 Route::group(['middleware'=>'frontend'],function(){
-	Route::get('loai-san-pham/{id}',['as'=>'loaisanpham','uses'=>'HomeController@loaisanpham']);
-
-	Route::get('san-pham/{id}',['as'=>'sanpham','uses'=>'HomeController@sanpham']);
-
-	Route::get('cart',['as'=>'shoppingcart','uses'=>'HomeController@cart']);
-
-	Route::get('lien-he',['as'=>'getLienHe','uses'=>'HomeController@getLienHe']);
-
-	Route::post('lien-he',['as'=>'postLienHe','uses'=>'HomeController@postLienHe']);
-
-	Route::get('mua-hang/{id}/{alias}',['as'=>'getMuaHang','uses'=>'HomeController@getMuaHang']);
-
-	Route::get('gio-hang',['as'=>'giohang','uses'=>'HomeController@giohang']);
-
-	Route::get('xoa-gio-hang/{rowId}',['as'=>'xoagiohang','uses'=>'HomeController@xoagiohang']);
-
-	Route::get('sua-gio-hang/{rowId}/{qty}',['as'=>'suagiohang','uses'=>'HomeController@suagiohang']);
 
 	Route::get('thanh-toan',['as'=>'thanhtoan','uses'=>'HomeController@thanhtoan']);
 
@@ -98,3 +81,16 @@ Route::group(['middleware'=>'frontend'],function(){
 	Route::get('addmoney/paymentsuccess',['as'=>'getPaymentSuccess','uses'=>'PaypalController@getPaymentSuccess']);
 	
 });
+
+	Route::get('loai-san-pham/{id}',['as'=>'loaisanpham','uses'=>'HomeController@loaisanpham']);
+	Route::get('loai-san-pham/{id}',['as'=>'loaisanpham','uses'=>'HomeController@loaisanpham']);
+	Route::get('cart',['as'=>'shoppingcart','uses'=>'HomeController@cart']);
+	Route::get('lien-he',['as'=>'getLienHe','uses'=>'HomeController@getLienHe']);
+	Route::post('lien-he',['as'=>'postLienHe','uses'=>'HomeController@postLienHe']);
+	Route::get('gio-hang',['as'=>'giohang','uses'=>'HomeController@giohang']);
+	Route::get('xoa-gio-hang/{rowId}',['as'=>'xoagiohang','uses'=>'HomeController@xoagiohang']);
+	Route::get('sua-gio-hang/{rowId}/{qty}',['as'=>'suagiohang','uses'=>'HomeController@suagiohang']);
+	Route::get('mua-hang/{id}/{alias}',['as'=>'getMuaHang','uses'=>'HomeController@getMuaHang']);
+	Route::get('san-pham/{id}',['as'=>'sanpham','uses'=>'HomeController@sanpham']);
+
+
