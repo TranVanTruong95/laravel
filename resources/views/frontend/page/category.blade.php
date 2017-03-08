@@ -82,7 +82,9 @@
                       <a class="prdocutname" href="product.html">{!! $item->name !!}</a>
                       <div class="thumbnail">
                         <span class="sale tooltip-test">Sale</span>
-                        <a href="{!! url('san-pham',$item->id) !!}"><img alt="" src="{!! asset('resources/upload/'.$item->image) !!}"></a>
+                        <div class="thumbnail-img">
+                          <a href="{!! url('san-pham',$item->id) !!}"><img alt="" src="{!! asset('resources/upload/'.$item->image) !!}"></a>
+                        </div>
                         <div class="pricetag">
                           <span class="spiral"></span><a href="{!! url('cart') !!}" class="productcart">ADD TO CART</a>
                           <div class="price">
