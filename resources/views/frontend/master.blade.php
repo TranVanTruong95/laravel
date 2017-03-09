@@ -25,27 +25,22 @@
 <link rel="shortcut icon" href="assets/ico/favicon.html">
 </head>
 <body>
-<!-- Header Start -->
-<header>
-  @include('frontend.block.header')
-  <div class="container">
-    @include('frontend.block.nav')
-  </div>
-</header>
-<!-- Header End -->
+    @include('frontend.block.search')
+    <div id="wrapper">
+        <div class="container">
+            <div id="header">
 
-<div id="maincontainer">
-  <!-- Slider Start-->
-    @yield('slider')
-  <!-- Slider End-->
-  
-  <!-- Section Start-->
-    @yield('ortherdetail')
-  <!-- Section End-->
-  
-  @yield('content')
+                @include('frontend.block.nav')
+            </div>
+            <!-- Header End -->
 
-  </div>
+            <div id="maincontainer">
+                @yield('slider')
+                @yield('ortherdetail')
+                @yield('content')
+            </div>
+        </div>
+    </div>
 
 <!-- Footer -->
 <footer id="footer">

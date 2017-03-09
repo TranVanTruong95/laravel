@@ -1,8 +1,9 @@
 <div id="categorymenu">
    <nav class="subnav">
      <ul class="nav-pills categorymenu">
-      <li><a href="{!! url('/') !!}">Trang chủ</a></li>
-      <li><a href="{!! url('/san-pham') !!}">Sản phẩm</a></li>
+      <li><a href="{!! url('/') !!}"><i class="fa fa-home"></i>  Trang chủ</a></li>
+      <li><a href="{!! url('/tai-khoan') !!}">Tài khoản</a></li>
+      <li><a href="{!! url('/gio-hang') !!}">Giỏ hàng</a></li>
      <?php $menu_level_1 = DB::table('cates')->where('parent_id',0)->get(); ?>
      @foreach($menu_level_1 as $item_level_1)
       <li><a href="">{!! $item_level_1->name !!}</a>

@@ -1,3 +1,28 @@
+body{
+	background-image: url('../../resources/upload/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#wrapper .container {
+	background: #fff;
+	border-radius: 10px;
+}
+.container {
+	padding: 0 !important;
+}
+#header #categorymenu{
+	background: #444;
+}
+#categorymenu ul.categorymenu li a{
+	color: #fff !important;
+}
+#search a{
+	color: #fff;
+}
+#search a:hover {
+	color: #f25c27;
+	text-decoration: underline;
+}
 .navbar-top-links {
 	height: 70px;
 	padding-top: 20px; 
@@ -31,4 +56,16 @@
 }
 .required {
 	color: red;
+}
+#logo_web img {
+	height: 100px;
+}
+.register-login div {
+	text-align: right;
+}
+#search .row {
+	margin:10px 0;
+}
+#search .row .col-sm-4{
+	padding:20px 0;
 }

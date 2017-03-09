@@ -86,7 +86,7 @@
                           <a href="{!! url('san-pham',$item->id) !!}"><img alt="" src="{!! asset('resources/upload/'.$item->image) !!}"></a>
                         </div>
                         <div class="pricetag">
-                          <span class="spiral"></span><a href="{!! url('cart') !!}" class="productcart">ADD TO CART</a>
+                          <span class="spiral"></span><a href="{!! url('mua-hang',[$item['id'],$item['alias']]) !!}" class="productcart">ADD TO CART</a>
                           <div class="price">
                             <div class="pricenew">${!! $item->price !!}</div>
                           </div>
