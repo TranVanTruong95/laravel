@@ -70,3 +70,6 @@ body{
 #search .row .col-sm-4{
 	padding:20px 0;
 }
+.register-login .pull-right {
+	color: #fff;
+}

@@ -25,6 +25,8 @@
 					<br />
 					<i class="glyphicon glyphicon-envelope"></i>
 						<a href="">quangtruongvttb@gmail.com</a>
+					<br />
+					<i class="fa fa-shopping-cart" style="color: #FF3300;"></i> {!! $count !!} sản phẩm - ${!! $total !!} <i class="fa fa-caret-down"></i>
 				</div>
 			</div>
 		</div>

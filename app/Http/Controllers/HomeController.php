@@ -6,6 +6,7 @@ use App\Product;
 use App\Cate;
 use DB,Mail;
 use Request,Cart;
+use View;
 
 class HomeController extends Controller
 {
@@ -16,7 +17,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
     }
 
     /**
@@ -28,7 +28,8 @@ class HomeController extends Controller
     {
         $product = Product::select('id','name','price','image','alias')->orderBy('id','DESC')->skip(0)->take(4)->get()->toArray();
         $product_relative = Product::select('id','name','price','image','alias')->orderBy('id','DESC')->skip(1)->take(4)->get()->toArray();
-        return view('frontend.page.home',compact('product','product_relative'));
+       
+        return view('frontend.page.home',['product'=>$product,'product_relative'=>$product_relative]);
     }
 
     public function loaisanpham($id){

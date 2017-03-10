@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/',['as'=>'home','uses'=>'HomeController@index']);
+
 
 Route::get('login',['as'=>'getLogin','uses'=>'Auth\LoginController@getLogin']);
 Route::post('login',['as'=>'postLogin','uses'=>'Auth\LoginController@postLogin']);
@@ -82,6 +82,8 @@ Route::group(['middleware'=>'frontend'],function(){
 	
 });
 
+Route::group(['middleware'=>'cart'],function(){
+	Route::get('/',['as'=>'home','uses'=>'HomeController@index']);
 	Route::get('loai-san-pham/{id}',['as'=>'loaisanpham','uses'=>'HomeController@loaisanpham']);
 	Route::get('loai-san-pham/{id}',['as'=>'loaisanpham','uses'=>'HomeController@loaisanpham']);
 	Route::get('cart',['as'=>'shoppingcart','uses'=>'HomeController@cart']);
@@ -93,4 +95,6 @@ Route::group(['middleware'=>'frontend'],function(){
 	Route::get('mua-hang/{id}/{alias}',['as'=>'getMuaHang','uses'=>'HomeController@getMuaHang']);
 	Route::get('san-pham/{id}',['as'=>'sanpham','uses'=>'HomeController@sanpham']);
 
+});
+	
 

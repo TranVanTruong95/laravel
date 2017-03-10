@@ -426,7 +426,7 @@ a.tweet_avatar { margin:5px 5px 5px 0; float:left }
 .tweet_list .tweet_avatar { float: left; }
 .tweet_time { clear:both }
 /* footersocial  */
-.footersocial { padding:30px 0 40px; background:#FDEECE; color:#5E626B }
+.footersocial { padding:30px 0 40px; background:#fff; color:#5E626B }
 .footersocial h2 { margin-bottom:30px; font-size:18px; color:#5e626b; text-transform:uppercase; border-bottom:1px dashed #999; padding: 0 0 5px 0 }
 #footersocial { float:right; margin-right:-12px }
 #footersocial a { background:url(../img/footericon.png) no-repeat; height:30px; width:30px; margin-right:11px; text-indent:-9999px; overflow:hidden; display:inline-block; margin-bottom:5px; -moz-transition: all .2s ease;
