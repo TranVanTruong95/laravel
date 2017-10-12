@@ -1,0 +1,380 @@
+/* header */
+body{
+	font-family: Arial !important;
+	background: #DCCDAC !important;
+}
+#content {
+	background: #fff;
+}
+#logo {
+	padding:10px 10px;
+	color: #000;
+	background: #fff;
+}
+#contact-header {
+	font-weight: bold;
+}
+.textleft {
+	text-align: right;
+}
+.carousel-inner {
+
+}
+.carousel-inner img {
+	height: 100%;
+	width: 100%;
+}
+
+
+/* end header */
+.content-featured {
+	width: 100%;
+	padding:0 10px;
+	margin-top: 20px;
+}
+
+ul.products li {
+	background: #f2f2f2;
+	padding:10px 10px 5px 10px !important;
+	margin-bottom: 0.5em !important;
+}
+.entry-footer span,.entry-footer h3,.entry-footer p{
+	color: #000;
+}
+
+#one-day-tour ul li{
+	background: none !important;
+}
+#one-day-tour {
+	background: #f2f2f2;
+}
+ #one-day-tour ul li h3 {
+ 	font-size: 1.3em;
+ }
+ ul.products li img {
+ 	width: 100% !important;
+ }
+.easingslider-1322 {
+	max-width: 100% !important;
+}
+.easingslider-1322 .easingslider-image{
+	max-width: 100% !important;
+	max-height: auto !important;
+}
+.widget {
+	margin:20px 0 !important;
+}
+aside h3 {
+	margin: 0 0 !important;
+}
+
+#one-day-tour .item-product .entry-thumbnail{
+	padding-top: 50px;
+
+}
+#one-day-tour .item-product .entry-thumbnail img{
+	border:1px solid #bbb;
+	padding: 3px 3px;
+}
+
+#one-day-tour .item-product .entry-description h3 a {
+	color: #000 !important;
+	font-weight: bold;
+}
+#one-day-tour .item-product .entry-description p {
+	color: #000;
+	margin-bottom: 0px !important;
+}
+#one-day-tour .item-product .entry-description span.price{
+	color: #c73603;
+    font-weight: bold;
+    font-size: 13px;
+}
+#one-day-tour .woocommerce a.button {
+	background: #4c6074 !important;
+}
+.woocommerce a.button {
+	text-transform: none !important;
+}
+.recent-product .item-product .entry-description h3 a{
+	color: #FF8400;
+	font-size: 16px;
+	font-weight: bold;
+}
+.recent-product .item-product .entry-description p{
+	color: #000;
+}
+.recent-product .woocommerce a.button {
+	background: #008800 !important;
+}
+.recent-product .item-product .entry-description span.price{
+	padding: 7px 7px;
+    border: 2px solid #F65108;
+    max-width: 107px;
+    color: #FF0000 !important;
+    font-size: 14px !important;
+}
+
+.featured_post p.title-featured-post a{
+	color: #355D35;
+    font-family: 'Times New Roman';
+    font-size: 34px;
+}
+.featured_post p.title-featured-post {
+	text-align: center;
+    margin-bottom: 0 !important;
+}
+.title-footer a{
+	color: #2B576E;
+}
+.wpcf7-submit {
+	background: #0000FF !important;
+}
+#wpcf7-f1297-o1 p{
+	color: #000;
+}
+#contact-footer {
+	border-top: 1px solid #ccc;
+}
+#contact-footer h3{
+	color: #000;
+}
+.border-img {
+	text-align: center;
+}
+
+
+
+
+/* Custom menu footer */
+.menu-footer #collapse{
+	background: #28a9d7;
+}
+.menu-footer ul li {
+	margin: 10px 0 !important;
+}
+.menu-footer .navbar-nav>li>a {
+	line-height: 15px;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 0 10px !important;
+}
+.menu-footer nav.navbar {
+	min-height: 20px !important;
+	margin-bottom: 0 !important;
+	border:none;
+}
+.menu-footer ul li {
+	border-right: 2px solid #fff;
+}
+.menu-footer ul li:last-child {
+	border-right: none;
+}
+.menu-footer ul li a{
+	color: #fff !important;
+}
+.menu-footer ul li a:hover{
+	text-decoration: underline;
+}
+.menu-footer .navbar-toggle{
+	float: none !important;
+}
+/* End menu footer */
+
+
+/* 21/03/2017 */
+footer .widget{
+	margin:0 0 !important;
+}
+.site-footer {
+	padding: 0 !important;
+}
+#content {
+	padding-bottom: 0 !important;
+	margin-bottom: 30px;
+}
+#logo .widget {
+	margin: 0 0 !important;
+}
+/* end 21/03/2017 */
+
+ul.product-categories li {
+	list-style: url('../images/bg_licustomertour.png');
+}
+.woocommerce .quantity .qty{
+	height: 30px;
+}
+ul.product-categories li ul {
+	display: none;
+}
+#logo ul {
+	width: 350px;
+}
+#logo ul li h2 {
+	color: #000;
+}
+#logo ul li{
+	color: #000;
+	padding:0 10px;
+}
+
+#logo ul li table td {
+	padding-left: 5px;
+}
+.dropdown a:hover{
+	text-decoration: none;
+}
+
+
+
+
+@media only all and (max-width: 768px) {
+	#one-day-tour ul li.col-sm-6{
+		width: 100% !important;
+	}
+
+	/* menu footer */
+	.menu-footer ul li{
+		border-right: none !important;
+	}
+
+	#primary-menu a {
+		color: #00b9d1;
+	}
+	/* end menu footer */
+}
+@media only all and (min-width: 768px) {
+	ul.products li img {
+	 	max-height: 148px;
+	 }
+	 #one-day-tour ul li.col-xs-12{
+		width: 48% !important;
+	}
+	#primary{
+		padding-bottom: 30px;
+	}
+	#secondary {
+		padding-bottom: 30px;
+	}
+	#one-day-tour .item-product .entry-description {
+		max-height: 50px;
+	}
+	#one-day-tour .item-product .entry-description h3{
+		position: relative;
+		top: -220px;
+		left: 0;
+	}
+	#one-day-tour .item-product .entry-description p{ 
+		height:60px;
+		position: relative;
+		top: -70px;
+		overflow: hidden;
+	}
+	#one-day-tour .item-product .entry-description span.price{
+		position: relative;
+		top: -225px;
+	}
+   .recent-product .item-product .entry-description span.price{
+		position: relative;
+		top: 60px;
+		left: 262px;
+	}
+	.recent-product ul.products li.col-xs-12 {
+		width: 100% !important;
+	}
+	.recent-product .item-product .entry-description p{
+		position: relative;
+		top: -50px;
+	}
+   .menu-footer #btn-menu-footer {
+   		display: none;
+   }
+}
+@media only all and (min-width: 970px){
+
+	.recent-product .item-product .entry-description span.price{
+		position: relative;
+		top: 55px;
+		left: 357px;
+	}
+	.woocommerce a.added_to_cart {
+		margin-top: 5px;
+	}
+	#one-day-tour ul li.col-xs-12{
+		width: 30.75% !important;
+	}
+
+	.dropdown-menu {
+		left: 120px !important;
+	}
+	
+
+}
+
+/* abc */
+.main-navigation a {
+	line-height: 40px;
+    font-size: 15px;
+    padding: 0 15px;
+}
+.main-navigation a:hover {
+	background: red;
+}
+#site-navigation {
+	height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+}
+.main-navigation {
+	min-height: inherit;
+}
+.primary-menu-cont > ul > li {
+	padding: 0;
+}
+.homepage_bestseller_heading {
+	font-size: 17px;
+    font-weight: 700;
+    display: block;
+    color: #0a2f0b;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.widget-title {
+	font-size: 15px;
+    font-weight: bold;
+    background: #cecece;
+    margin-bottom: 5px !important;
+    padding: 5px;
+}
+#one-day-tour .woocommerce a.button,
+.woocommerce ul.products li.product .button,
+.homepage_post_button,
+.wpcf7-form input[type='submit'] {
+	background: #00bcd4 !important;
+}
+.responsive-menu-bar {
+	border: none;
+    border-radius: 0;
+    color: #444;
+    background: #00b9d1;
+    box-shadow: inset 0 1px 0 #FDFDFC;
+    white-space: nowrap;
+    padding: 5px 8px !important;
+    line-height: 2.4em;
+}
+#primary-menu .sub-menu li {
+	list-style-type: none;
+	padding-left: 10px;
+}
+#responsive-menu {
+	background: #fff;
+	font-weight: bold;
+}
+
+@media (max-width: 400px) {
+	 .woocommerce[class*=columns-] ul.products li.product {
+	 	width: 100%;
+	 }
+}
+

@@ -26,7 +26,18 @@
 					<i class="glyphicon glyphicon-envelope"></i>
 						<a href="">quangtruongvttb@gmail.com</a>
 					<br />
-					<i class="fa fa-shopping-cart" style="color: #FF3300;"></i> {!! $count !!} sản phẩm - ${!! $total !!} <i class="fa fa-caret-down"></i>
+
+					<div class="dropdown">
+					 	<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <i class="fa fa-shopping-cart" style="color: #FF3300;"></i> {!! $count !!} sản phẩm - ${!! $total !!} <i class="fa fa-caret-down"></i>
+						    <span class="caret"></span>
+					 	</button>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+					    	<li>1</li>
+					    	<li>2</li>
+					    	<li>3</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

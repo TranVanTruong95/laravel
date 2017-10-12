@@ -73,3 +73,7 @@ body{
 .register-login .pull-right {
 	color: #fff;
 }
+#dLabel {
+	background: #000;
+	border: none;
+}
